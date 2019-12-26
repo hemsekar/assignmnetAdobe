@@ -1,0 +1,7 @@
+        <img src="{{product.img_url}}" >
+         <p>{{product.name}}</p>
+         <div class="row">
+         <div class="col-md-6">{{product.price}}</div>
+         <div class="col-md-6 text-right color-green">{{product.discount}}% off</div>
+        </div>
+        <p class="text-center"><button class="btn btn-primary p-btn" (click)="addToCart(product)">Add to cart</button></p>

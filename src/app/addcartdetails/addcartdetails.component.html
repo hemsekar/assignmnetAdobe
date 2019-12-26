@@ -1,0 +1,36 @@
+<div class="row add-cart-details" >
+  <div class="col-md-8 cart-row" *ngFor="let details of productDetails; let i = index">
+    <div class="row">
+    <div class="col-md-3">
+      <img src="{{ details.img_url }}" />  
+    </div>
+      <div class="col-md-9">
+      <p>{{ details.name }}</p>
+      <p>{{ details.price}}<span style="margin-left:50px;">{{ details.discount }}%</span>
+        <span><span class="plus minus "
+          (click)="changeItem('dec', details)">-</span>
+            <span style="margin-left:20px">{{ details.qty }}</span>
+          <span class="plus" (click)="changeItem('inc', details)">
+            +
+            </span>
+            </span>
+            <span (click)="removeItem(i)" class="remove">Remove</span>
+      </p>
+    
+    
+  </div>
+  </div>
+  </div>
+
+<div class="col-md-3 priceDetailsDiv" *ngIf="productCaculations.totalPayble !== 0">
+  <p class="priceDetails">Price Details</p>
+  <p>
+    Price :<span class="float-right">{{ productCaculations.totalPrice }}</span>
+  </p>
+  <p>
+    Discount :<span class="float-right">{{ productCaculations.discount }}</span>
+  </p>
+  <p class="totalPay">
+    Total Payable :<span class="float-right">{{ productCaculations.totalPayble }}</span>
+  </p>
+</div>

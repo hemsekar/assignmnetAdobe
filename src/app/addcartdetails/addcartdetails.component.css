@@ -1,0 +1,49 @@
+img{
+    width:200px;
+    height:150px;
+}
+
+.add-cart-details  {
+    top:60px;
+    position: relative;
+    margin-bottom:20px;
+}
+
+.cart-row{
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 10px;
+    margin-left: 30px;
+}
+
+.plus{    
+    margin-left: 20px;
+    cursor: pointer;
+    border: 1px solid gray;
+    padding: 6px 10px 10px 7px;
+    border-radius: 50%;
+}
+ 
+.minus{        
+    padding: 6px 12px 10px 12px;    
+}
+
+.remove{
+    margin-left:80px;
+}
+
+.priceDetailsDiv{
+    border: 1px solid gray;
+    margin-left: 20px;
+}
+
+.priceDetails{
+    border-bottom:1px solid gray;
+    padding:10px;
+}
+
+.totalPay{
+    border-top:1px solid gray;
+    padding-top:5px;
+    font-weight: bold;
+}

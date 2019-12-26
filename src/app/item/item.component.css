@@ -1,0 +1,19 @@
+img{
+    height:175px;    
+    width:160px;    
+}
+
+.color-green{
+    color:green;
+    font-weight: 600;
+}
+
+.p-btn{
+    margin-top: 10px;
+    background: yellow;
+    color: black;
+    font-weight: 600;
+    border: 1px solid yellow;
+    border-radius: 20px;
+
+}

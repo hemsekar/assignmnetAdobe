@@ -1,0 +1,8 @@
+<nav class="navbar navbar-dark bg-primary">
+  <input type="text" [(ngModel)]="searchItem" name="searchItem" (keyup)="itemsInSearch()" placeholder="Search">
+  <a class="glyphicon glyphicon-shopping-cart" (click)="goToCart()">
+    <button style="float:right"  >
+      Cart {{ allProducts.length }}
+    </button>
+    </a>
+</nav>

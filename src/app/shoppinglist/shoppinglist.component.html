@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">    
+    <ng-container *ngFor="let details of shoppingDetails | productsearch : searchInfoDetails" >
+      <div class="col-md-2">
+        <app-item
+          [product]="details"
+          (sendProduct)="getProduct($event)"
+        ></app-item>
+      </div>
+    </ng-container>
+  </div>
+</div>
